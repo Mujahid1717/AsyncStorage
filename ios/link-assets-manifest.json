@@ -1,0 +1,41 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Bubblegum.ttf",
+      "sha1": "db9c57ef886183ee82667ac9ff3172eb59ac812a"
+    },
+    {
+      "path": "assets/fonts/CartoonQueen.ttf",
+      "sha1": "29394bd5eac2c4d85bbb3c96d19421e3632a0446"
+    },
+    {
+      "path": "assets/fonts/GlossySheen.ttf",
+      "sha1": "3687f553841eb47067e2df702efae9e8cd73892c"
+    },
+    {
+      "path": "assets/fonts/GlossySheenRegular.ttf",
+      "sha1": "cdd9d74dd54cf89fceb441296da2f4267cfadd37"
+    },
+    {
+      "path": "assets/fonts/GlossySheenShadow.ttf",
+      "sha1": "d3b35d20845254bda258819b64a7b5b99bd60fc7"
+    },
+    {
+      "path": "assets/fonts/GlossySheenShine.ttf",
+      "sha1": "b7cd86258c479be355122cca4b80ebe9d473df9f"
+    },
+    {
+      "path": "assets/fonts/KGRedHands.ttf",
+      "sha1": "2c3de8328502df3ed386afe112e7ca874cf89e11"
+    },
+    {
+      "path": "assets/fonts/KGRedHandsOutline.ttf",
+      "sha1": "421c03c7acff4ccd9ed7f178e3684aa2ae5035e2"
+    },
+    {
+      "path": "assets/fonts/OddlyCalming.ttf",
+      "sha1": "7cd5b346eb8e38ef016646b3dcbf509ce751bb67"
+    }
+  ]
+}
