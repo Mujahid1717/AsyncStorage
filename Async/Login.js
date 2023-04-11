@@ -1,5 +1,5 @@
-import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import React, { useState,useEffect } from 'react';
+import { StyleSheet, Text, TextInput, TouchableOpacity, View ,Alert} from 'react-native';
+import React, { useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation} from '@react-navigation/native';
 
@@ -15,15 +15,21 @@ const Login = () => {
   const navigation = useNavigation();
   
   const saveEmailPass = async()=>{
-    try {
-    await AsyncStorage.setItem('EMAIL',email)
-    await AsyncStorage.setItem('PASSWORD',password)
-    navigation.navigate('contact'),
-    clearData();
-    }catch(e){
-      console.log(e)
-    }
+    var reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
+    var testEmail = reg.test((email))
+    if (email == '' || password == ''){
+      Alert.alert('Error','Enter Email Address and Password')
+      navigation.navigate('login')
+      }
+      else if (testEmail == true) {
+        await AsyncStorage.setItem('EMAIL',email)
+        await AsyncStorage.setItem('PASSWORD',password)
+        navigation.navigate('contact')
+        clearData();
+      }else {
+        alert('Enter Valid Email')
+      }
   };
   return (
     <View style={styles.container}>

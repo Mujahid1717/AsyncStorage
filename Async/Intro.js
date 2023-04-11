@@ -12,10 +12,11 @@ const Intro = () => {
             checkLogin();
         },3000)
     },[])
+    
      const checkLogin = async()=>{
         const email = await AsyncStorage.getItem('EMAIL')
         const password = await AsyncStorage.getItem('PASSWORD')
-            if(email !== null || password !== null){
+            if(email !== null ){
               navigation.navigate('contact')
             }else{
               navigation.navigate('login')
